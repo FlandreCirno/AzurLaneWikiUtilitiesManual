@@ -8,6 +8,9 @@ shipAwardList = ['驱逐', '轻巡', '重巡', '战巡', '战列', '航母', '�
 
 def getShipTemplate():
     return util.parseDataFile('ship_data_template', mode = 2)
+    
+def getShipStatistics():
+    return util.parseDataFile('ship_data_statistics')
 
 def getChapterTemplate():
     return util.getChapterTemplate()
@@ -23,6 +26,7 @@ def getItemStatistics():
     
 def getChapterAward():
     shipTemplate = getShipTemplate()
+    shipStatistics = getShipStatistics()
     shipSkin = getShipSkinTemplate()
     mapData = getMapData()
     chapterTemplate = getChapterTemplate()
@@ -75,17 +79,17 @@ def getChapterAward():
         if os.path.isfile(filePath):
             raise Exception(f'File: {filename} already exists!')
         with open(filePath, 'w+', encoding='utf-8') as f:
-            output = formatMap(m, shipSkin, shipTemplate)
+            output = formatMap(m, shipSkin, shipTemplate, shipStatistics)
             output = util.parseNameCode(output, nameCode)
             f.write(output)
 
-def formatMap(mapData, shipSkin, shipTemplate):
+def formatMap(mapData, shipSkin, shipTemplate, shipStatistics):
     output = mapData['name'] + '\n'
     for chapter in mapData['chapters'].values():
-        output += formatChapter(chapter, shipSkin, shipTemplate)
+        output += formatChapter(chapter, shipSkin, shipTemplate, shipStatistics)
     return output
 
-def formatChapter(chapterData, shipSkin, shipTemplate):
+def formatChapter(chapterData, shipSkin, shipTemplate, shipStatistics):
     output = chapterData['chapter_name'] + '-' + chapterData['name'] + '\n'
     characterList = {}
     for t in shipAwardList:
@@ -93,7 +97,7 @@ def formatChapter(chapterData, shipSkin, shipTemplate):
     for award in chapterData['characterAward']:
         t = util.getShipType(award, shipTemplate, award//10)
         if shipType[t-1] in characterList.keys():
-            characterList[shipType[t-1]].append(util.getShipName(award, shipSkin, award//10))
+            characterList[shipType[t-1]].append(util.getShipName(award, shipSkin, shipStatistics))
     for k, v in characterList.items():
         output += '|掉落' + k + '='
         for s in v:

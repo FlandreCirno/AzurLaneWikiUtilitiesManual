@@ -10326,6 +10326,258 @@
         "ui_type": 1,
         "uifx": ""
     },
+    "1560001": {
+        "ani_name": "Map_1560001",
+        "animtor": 1,
+        "bg": "Map_1560001",
+        "bgm": "battle-pacific",
+        "bind_map": 1560011,
+        "cloud_suffix": "",
+        "clouds_pos": [
+            [
+                332,
+                271
+            ],
+            [
+                896,
+                110
+            ],
+            [
+                -280,
+                0
+            ],
+            [
+                990,
+                -90
+            ],
+            [
+                0,
+                -465
+            ]
+        ],
+        "destory_icon_suffix": "blue",
+        "drop_by_map_display": "",
+        "enter_story": "BIHAIGUANGLIN1",
+        "guide_id": "",
+        "level_limit": 1,
+        "map": 1560001,
+        "name": "\u78a7\u6d77\u5149\u7cbc\u00b7\u4e0a\u7bc7|| ||CHAPTER EX||E.X.",
+        "on_activity": 4104,
+        "title": "EX",
+        "type": 4,
+        "ui_type": 1,
+        "uifx": ""
+    },
+    "1560002": {
+        "ani_name": "Map_1560002",
+        "animtor": 1,
+        "bg": "Map_1560002",
+        "bgm": "map-longgong",
+        "bind_map": 1560012,
+        "cloud_suffix": "",
+        "clouds_pos": [
+            [
+                332,
+                271
+            ],
+            [
+                896,
+                110
+            ],
+            [
+                -280,
+                0
+            ],
+            [
+                990,
+                -90
+            ],
+            [
+                0,
+                -465
+            ]
+        ],
+        "destory_icon_suffix": "blue",
+        "drop_by_map_display": "",
+        "enter_story": "BIHAIGUANGLIN17",
+        "guide_id": "",
+        "level_limit": 1,
+        "map": 1560002,
+        "name": "\u78a7\u6d77\u5149\u7cbc\u00b7\u4e0b\u7bc7|| ||CHAPTER EX||E.X.",
+        "on_activity": 4104,
+        "title": "EX",
+        "type": 4,
+        "ui_type": 1,
+        "uifx": ""
+    },
+    "1560011": {
+        "ani_name": "Map_1560011",
+        "animtor": 1,
+        "bg": "Map_1560011",
+        "bgm": "battle-pacific",
+        "bind_map": 1560001,
+        "cloud_suffix": "",
+        "clouds_pos": [
+            [
+                332,
+                271
+            ],
+            [
+                896,
+                110
+            ],
+            [
+                -280,
+                0
+            ],
+            [
+                990,
+                -90
+            ],
+            [
+                0,
+                -465
+            ]
+        ],
+        "destory_icon_suffix": "blue",
+        "drop_by_map_display": "",
+        "enter_story": "BIHAIGUANGLIN1",
+        "guide_id": "",
+        "level_limit": 1,
+        "map": 1560011,
+        "name": "\u78a7\u6d77\u5149\u7cbc\u00b7\u4e0a\u7bc7|| ||CHAPTER EX||E.X.",
+        "on_activity": 4104,
+        "title": "EX",
+        "type": 5,
+        "ui_type": 1,
+        "uifx": ""
+    },
+    "1560012": {
+        "ani_name": "Map_1560012",
+        "animtor": 1,
+        "bg": "Map_1560012",
+        "bgm": "map-longgong",
+        "bind_map": 1560002,
+        "cloud_suffix": "",
+        "clouds_pos": [
+            [
+                332,
+                271
+            ],
+            [
+                896,
+                110
+            ],
+            [
+                -280,
+                0
+            ],
+            [
+                990,
+                -90
+            ],
+            [
+                0,
+                -465
+            ]
+        ],
+        "destory_icon_suffix": "blue",
+        "drop_by_map_display": "",
+        "enter_story": "BIHAIGUANGLIN17",
+        "guide_id": "",
+        "level_limit": 1,
+        "map": 1560012,
+        "name": "\u78a7\u6d77\u5149\u7cbc\u00b7\u4e0b\u7bc7|| ||CHAPTER EX||E.X.",
+        "on_activity": 4104,
+        "title": "EX",
+        "type": 5,
+        "ui_type": 1,
+        "uifx": ""
+    },
+    "1560025": {
+        "ani_name": "Map_1560012",
+        "animtor": 1,
+        "bg": "Map_1560012",
+        "bgm": "battle-longgong",
+        "bind_map": 1560012,
+        "cloud_suffix": "",
+        "clouds_pos": [
+            [
+                332,
+                271
+            ],
+            [
+                896,
+                110
+            ],
+            [
+                -280,
+                0
+            ],
+            [
+                990,
+                -90
+            ],
+            [
+                0,
+                -465
+            ]
+        ],
+        "destory_icon_suffix": "blue",
+        "drop_by_map_display": "",
+        "enter_story": "",
+        "guide_id": "",
+        "level_limit": 1,
+        "map": 1560025,
+        "name": "\u78a7\u6d77\u5149\u7cbc\u00b7SP|| ||CHAPTER EX||E.X.",
+        "on_activity": 4104,
+        "title": "EX",
+        "type": 8,
+        "ui_type": 1,
+        "uifx": ""
+    },
+    "1560026": {
+        "ani_name": "Map_1560012",
+        "animtor": 1,
+        "bg": "Map_1560012",
+        "bgm": "battle-longgong",
+        "bind_map": 1560012,
+        "cloud_suffix": "",
+        "clouds_pos": [
+            [
+                332,
+                271
+            ],
+            [
+                896,
+                110
+            ],
+            [
+                -280,
+                0
+            ],
+            [
+                990,
+                -90
+            ],
+            [
+                0,
+                -465
+            ]
+        ],
+        "destory_icon_suffix": "blue",
+        "drop_by_map_display": "",
+        "enter_story": "",
+        "guide_id": "",
+        "level_limit": 1,
+        "map": 1560026,
+        "name": "\u78a7\u6d77\u5149\u7cbc\u00b7EX|| ||CHAPTER EX||E.X.",
+        "on_activity": 4104,
+        "title": "EX",
+        "type": 8,
+        "ui_type": 1,
+        "uifx": ""
+    },
     "2100000": {
         "ani_name": "fengshan_1",
         "animtor": 1,

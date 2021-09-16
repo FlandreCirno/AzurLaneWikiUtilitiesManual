@@ -8632,7 +8632,8 @@
         "extra_desc": [
             "\u3010\u585e\u58ec\u4e4b\u654c\u3011\u5347\u7ea7",
             "\u4e13\u5c5e\u5f39\u5e55\u5347\u7ea7",
-            "\u5168\u6b66\u5668\u6548\u7387\u63d0\u9ad85%"
+            "\u5168\u6b66\u5668\u6548\u7387\u63d0\u9ad85%",
+            "\u89e6\u53d1\u4e13\u5c5e\u5f39\u5e55\u6240\u9700\u4e3b\u70ae\u5c04\u51fb\u6b21\u6570\u51cf\u534a"
         ],
         "id": 930,
         "lv": 30,
@@ -9617,6 +9618,162 @@
         "lv": 30,
         "need_exp": 600,
         "need_lv": 70,
+        "special": 1
+    },
+    "1031": {
+        "change_skill": "",
+        "effect": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "effect_attr": [
+            [
+                "luck",
+                3
+            ]
+        ],
+        "effect_base": "",
+        "effect_breakout": 0,
+        "effect_desc": "\u5e78\u8fd0+3",
+        "effect_dialog": "",
+        "effect_equipment_proficiency": "",
+        "effect_preload": "",
+        "effect_skill": "",
+        "effect_skin": 0,
+        "extra_desc": "",
+        "id": 1031,
+        "lv": 31,
+        "need_exp": 200,
+        "need_lv": 70,
+        "special": 1
+    },
+    "1032": {
+        "change_skill": "",
+        "effect": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "effect_attr": [
+            [
+                "luck",
+                4
+            ]
+        ],
+        "effect_base": "",
+        "effect_breakout": 0,
+        "effect_desc": "\u5e78\u8fd0+4",
+        "effect_dialog": "",
+        "effect_equipment_proficiency": "",
+        "effect_preload": "",
+        "effect_skill": "",
+        "effect_skin": 0,
+        "extra_desc": "",
+        "id": 1032,
+        "lv": 32,
+        "need_exp": 300,
+        "need_lv": 70,
+        "special": 1
+    },
+    "1033": {
+        "change_skill": [
+            19200,
+            18200
+        ],
+        "effect": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "effect_attr": [
+            [
+                "luck",
+                5
+            ]
+        ],
+        "effect_base": "",
+        "effect_breakout": 0,
+        "effect_desc": "\u5e78\u8fd0+5|\u3010\u6218\u573a\u55c5\u89c9\u3011\u6280\u80fd\u5f3a\u5316\u4e3a\u3010\u6218\u573a\u55c5\u89c9 +\u3011",
+        "effect_dialog": "",
+        "effect_equipment_proficiency": "",
+        "effect_preload": "",
+        "effect_skill": "",
+        "effect_skin": 0,
+        "extra_desc": "",
+        "id": 1033,
+        "lv": 33,
+        "need_exp": 400,
+        "need_lv": 70,
+        "special": 1
+    },
+    "1034": {
+        "change_skill": "",
+        "effect": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "effect_attr": [
+            [
+                "luck",
+                6
+            ]
+        ],
+        "effect_base": "",
+        "effect_breakout": 0,
+        "effect_desc": "\u5e78\u8fd0+6",
+        "effect_dialog": "",
+        "effect_equipment_proficiency": "",
+        "effect_preload": "",
+        "effect_skill": "",
+        "effect_skin": 0,
+        "extra_desc": "",
+        "id": 1034,
+        "lv": 34,
+        "need_exp": 500,
+        "need_lv": 70,
+        "special": 1
+    },
+    "1035": {
+        "change_skill": [
+            19210,
+            18210
+        ],
+        "effect": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "effect_attr": [
+            [
+                "luck",
+                7
+            ]
+        ],
+        "effect_base": "",
+        "effect_breakout": 0,
+        "effect_desc": "\u5e78\u8fd0+7|\u3010\u7279\u6b8a\u70ae\u51fb\u8bad\u7ec3\u3011\u6280\u80fd\u5f3a\u5316\u4e3a\u3010\u7279\u6b8a\u70ae\u51fb\u8bad\u7ec3 +\u3011",
+        "effect_dialog": "",
+        "effect_equipment_proficiency": "",
+        "effect_preload": "",
+        "effect_skill": "",
+        "effect_skin": 0,
+        "extra_desc": "",
+        "id": 1035,
+        "lv": 35,
+        "need_exp": 750,
+        "need_lv": 100,
         "special": 1
     },
     "1101": {

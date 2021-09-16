@@ -6925,30 +6925,15 @@
             2
         ],
         "time": [
-            "timer",
             [
-                [
-                    2021,
-                    2,
-                    14
-                ],
-                [
-                    0,
-                    0,
-                    0
-                ]
+                2021,
+                2,
+                14
             ],
             [
-                [
-                    2031,
-                    2,
-                    14
-                ],
-                [
-                    23,
-                    59,
-                    59
-                ]
+                0,
+                0,
+                0
             ]
         ],
         "voice_actor": 116,
@@ -30314,30 +30299,15 @@
             2
         ],
         "time": [
-            "timer",
             [
-                [
-                    2021,
-                    2,
-                    14
-                ],
-                [
-                    0,
-                    0,
-                    0
-                ]
+                2021,
+                2,
+                14
             ],
             [
-                [
-                    2031,
-                    2,
-                    14
-                ],
-                [
-                    23,
-                    59,
-                    59
-                ]
+                0,
+                0,
+                0
             ]
         ],
         "voice_actor": 249,
@@ -32409,6 +32379,110 @@
         ],
         "time": "",
         "voice_actor": 1,
+        "voice_actor_2": -1
+    },
+    "137030": {
+        "air_bomb_skin": "",
+        "air_bullet_skin": "",
+        "air_torpedo_skin": "",
+        "aircraft_skin": "",
+        "bg": "",
+        "bg_sp": "",
+        "bgm": "",
+        "bound_bone": {
+            "antiaircraft": [
+                [
+                    1.151,
+                    1.388,
+                    0
+                ]
+            ],
+            "cannon": [
+                [
+                    1.122,
+                    1.404,
+                    0
+                ]
+            ],
+            "plane": [
+                [
+                    1.112,
+                    1.451,
+                    0
+                ]
+            ]
+        },
+        "bullet_skin_main": "",
+        "bullet_skin_secondary": "",
+        "desc": "\u5e03\u666fok\uff01\u9020\u578bok\uff01\u55ef\uff0c\u4e00\u5207\u90fd\u5f88\u5b8c\u7f8e\uff01\u4eca\u5929\u7684\u8428\u62c9\u59b9\u59b9\u662f\u676f\u9762\u5927\u4f7f\u54e6~\u6307\u6325\u5b98\uff0c\u8981\u6765\u4e00\u4efd\u676f\u9762\u5417~\uff1f",
+        "fx_container": [
+            [
+                0,
+                1.99185,
+                1.15
+            ],
+            [
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0.75,
+                -1.299
+            ],
+            [
+                0,
+                0,
+                0
+            ]
+        ],
+        "group_index": 10,
+        "hand_id": 5,
+        "id": 137030,
+        "illustrator": -1,
+        "illustrator2": -1,
+        "l2d_animations": "",
+        "l2d_para_range": "",
+        "l2d_se": "",
+        "l2d_voice_calibrate": "",
+        "lip_smoothing": 0,
+        "lip_sync_gain": 0,
+        "live2d_offset": [
+            0,
+            0,
+            0
+        ],
+        "main_UI_FX": "",
+        "name": "\u676f\u9762\u5927\u4f7f\uff1f",
+        "painting": "salatuojia_9",
+        "prefab": "salatuojia_9",
+        "rarity_bg": "",
+        "ship_group": 10703,
+        "shop_id": 70588,
+        "shop_type_id": 0,
+        "show_skin": "stand",
+        "skin_type": 4,
+        "smoke": [
+            [
+                50,
+                [
+                    [
+                        "smoke",
+                        [
+                            -0.545,
+                            2.068,
+                            -0.6
+                        ]
+                    ]
+                ]
+            ]
+        ],
+        "special_effects": "",
+        "spine_offset": "",
+        "tag": {},
+        "time": "",
+        "voice_actor": 28,
         "voice_actor_2": -1
     },
     "199010": {
@@ -41346,30 +41420,15 @@
             2
         ],
         "time": [
-            "timer",
             [
-                [
-                    2021,
-                    2,
-                    14
-                ],
-                [
-                    0,
-                    0,
-                    0
-                ]
+                2021,
+                2,
+                14
             ],
             [
-                [
-                    2031,
-                    2,
-                    14
-                ],
-                [
-                    23,
-                    59,
-                    59
-                ]
+                0,
+                0,
+                0
             ]
         ],
         "voice_actor": 34,

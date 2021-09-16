@@ -150,9 +150,9 @@ def sanitizeMemory(memory, skinTemplate, shipStatistics, shipTemplate, nameCode)
                 name = script['actorName']
             elif actor and actor > 0:
                 try:
-                    name = getShipName(actor, skinTemplate)
+                    name = getShipName(actor, skinTemplate, shipStatistics)
                 except:
-                    name = actor
+                    name = str(actor)
                     print(f'未找到actor{actor}名称')
             else:
                 name = ''
@@ -291,4 +291,4 @@ def MemoryJP():
 
 if __name__ == "__main__":
     wikiGenerate()
-    MemoryJP()
+    #MemoryJP()

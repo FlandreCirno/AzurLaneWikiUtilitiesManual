@@ -1,8 +1,18 @@
 {
+    "10102": {
+        "name": "Dewey",
+        "sculpture": "duwei",
+        "ship_group": 10102
+    },
     "10105": {
         "name": "GL_SaraNo1",
         "sculpture": "gelideli",
         "ship_group": 10105
+    },
+    "10108": {
+        "name": "Maury",
+        "sculpture": "moli",
+        "ship_group": 10108
     },
     "10109": {
         "name": "Fletcher",
@@ -504,6 +514,11 @@
         "sculpture": "guangrong",
         "ship_group": 20706
     },
+    "21304": {
+        "name": "Abercrombie",
+        "sculpture": "abeikelongbi",
+        "ship_group": 21304
+    },
     "29901": {
         "name": "Neptune",
         "sculpture": "haiwangxing",
@@ -589,6 +604,11 @@
         "sculpture": "heichao",
         "ship_group": 30127
     },
+    "30129": {
+        "name": "Hayaizo",
+        "sculpture": "daofeng",
+        "ship_group": 30129
+    },
     "30132": {
         "name": "Mutsuki",
         "sculpture": "muyue",
@@ -603,6 +623,16 @@
         "name": "Uduki",
         "sculpture": "maoyue",
         "ship_group": 30135
+    },
+    "30147": {
+        "name": "Umikaze",
+        "sculpture": "haifeng",
+        "ship_group": 30147
+    },
+    "30148": {
+        "name": "Yamakaze",
+        "sculpture": "shanfeng",
+        "ship_group": 30148
     },
     "30156": {
         "name": "Niizuki",
@@ -631,7 +661,7 @@
     },
     "30181": {
         "name": "fuwarin1118",
-        "sculpture": "xia_2",
+        "sculpture": "xia",
         "ship_group": 30181
     },
     "30182": {
@@ -658,6 +688,11 @@
         "name": "Isuzuzu",
         "sculpture": "wushiling",
         "ship_group": 30205
+    },
+    "30207": {
+        "name": "Yura",
+        "sculpture": "youliang",
+        "ship_group": 30207
     },
     "30208": {
         "name": "RageofONI",
@@ -703,6 +738,11 @@
         "name": "REPORTER_AOBA",
         "sculpture": "qingye",
         "ship_group": 30303
+    },
+    "30306": {
+        "name": "ChiKUMA",
+        "sculpture": "zhumo",
+        "ship_group": 30306
     },
     "30307": {
         "name": "Myoko_CA",
@@ -801,7 +841,7 @@
     },
     "30514": {
         "name": "S8u6r6ug8A",
-        "sculpture": "junhe_5",
+        "sculpture": "junhe",
         "ship_group": 30514
     },
     "30605": {
@@ -868,6 +908,11 @@
         "name": "Shinano",
         "sculpture": "xinnong",
         "ship_group": 30708
+    },
+    "30712": {
+        "name": "Misato",
+        "sculpture": "gecheng",
+        "ship_group": 30712
     },
     "30801": {
         "name": "I19_sensuisenntai",
