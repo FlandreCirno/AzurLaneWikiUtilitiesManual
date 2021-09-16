@@ -1,0 +1,81 @@
+slot0 = class("IdolMasterStageScene", import("..TemplateMV.BackHillTemplate"))
+
+slot0.getUIName = function (slot0)
+	return "IdolMasterStageUI"
+end
+
+slot0.edge2area = {
+	default = "map_middle"
+}
+
+slot0.init = function (slot0)
+	slot0.top = slot0:findTF("top")
+	slot0._map = slot0:findTF("map")
+
+	for slot4 = 0, slot0._map.childCount - 1, 1 do
+		slot0["map_" .. go(slot5).name] = slot0._map:GetChild(slot4)
+	end
+
+	slot0._shipTpl = slot0._map:Find("ship")
+	slot0._upper = slot0:findTF("upper")
+
+	for slot4 = 0, slot0._upper.childCount - 1, 1 do
+		slot0["upper_" .. go(slot5).name] = slot0._upper:GetChild(slot4)
+	end
+
+	slot0.containers = {
+		slot0.map_middle
+	}
+	slot0.graphPath = GraphPath.New(import("GameCfg.BackHillGraphs.IdolMasterStageGraph"))
+	slot0.loader = ThirdAnniversaryAutoloader.New()
+end
+
+slot0.didEnter = function (slot0)
+	onButton(slot0, slot0:findTF("top/return_btn"), function ()
+		slot0:emit(slot1.ON_BACK)
+	end)
+	onButton(slot0, slot0:findTF("top/return_main_btn"), function ()
+		slot0:emit(slot1.ON_HOME)
+	end)
+	onButton(slot0, slot0:findTF("top/help_btn"), function ()
+		pg.MsgboxMgr.GetInstance():ShowMsgBox({
+			type = MSGBOX_TYPE_HELP,
+			helps = pg.gametip.idolmaster_main.tip
+		})
+	end)
+	slot0:InitStudents(getProxy(ActivityProxy).getActivityByType(slot1, ActivityConst.ACTIVITY_TYPE_MINIGAME) and slot1.id, 2, 3)
+	slot0:InitFacilityCross(slot0._map, slot0._upper, "jiujiuwoshouhui", function ()
+		pg.m02:sendNotification(GAME.GO_MINI_GAME, 24)
+	end)
+
+	slot2 = getProxy(ActivityProxy).getActivityById(slot2, ActivityConst.IDOL_MASTER_PT_ID)
+
+	slot0:InitFacilityCross(slot0._map, slot0._upper, "leijijiangli", function ()
+		slot0(slot1, BackHillMediatorTemplate.GO_SCENE, SCENE.ACTIVITY, {
+			id = slot0.emit and slot1.id
+		})
+	end)
+	slot0.InitFacilityCross(slot0, slot0._map, slot0._upper, "jinianzhang", function ()
+		slot0:emit(BackHillMediatorTemplate.GO_SCENE, SCENE.IDOLMASTER_MEDAL_COLLECTION_SCENE)
+	end)
+	slot0.BindItemActivityShop(slot0)
+	slot0:BindItemSkinShop()
+	slot0:BindItemBuildShip()
+	slot0:BindItemBattle()
+	slot0:UpdateView()
+end
+
+slot0.UpdateView = function (slot0)
+	slot2 = nil
+
+	setActive(slot6, (getProxy(ActivityProxy).getActivityByType(slot1, ActivityConst.ACTIVITY_TYPE_MINIGAME) and getProxy(MiniGameProxy):GetHubByHubId(slot3:getConfig("config_id")) and getProxy(ActivityProxy).getActivityByType(slot1, ActivityConst.ACTIVITY_TYPE_MINIGAME) and getProxy(MiniGameProxy).GetHubByHubId(slot3.getConfig("config_id")).count > 0) or (getProxy(ActivityProxy).getActivityByType(slot1, ActivityConst.ACTIVITY_TYPE_MINIGAME) and getProxy(MiniGameProxy).GetHubByHubId(slot3.getConfig("config_id")):getConfig("reward_need") <= getProxy(ActivityProxy).getActivityByType(slot1, ActivityConst.ACTIVITY_TYPE_MINIGAME) and getProxy(MiniGameProxy).GetHubByHubId(slot3.getConfig("config_id")).usedtime and getProxy(ActivityProxy).getActivityByType(slot1, ActivityConst.ACTIVITY_TYPE_MINIGAME) and getProxy(MiniGameProxy).GetHubByHubId(slot3.getConfig("config_id")).ultimate == 0))
+	setActive(slot0.upper_leijijiangli:Find("tip"), slot1:getActivityById(ActivityConst.IDOL_MASTER_PT_ID) and slot7:readyToAchieve())
+	setActive(slot0.upper_jinianzhang:Find("tip"), IdolMasterMedalCollectionMediator.isHaveActivableMedal())
+end
+
+slot0.willExit = function (slot0)
+	slot0:clearStudents()
+	slot0.super.willExit(slot0)
+end
+
+return slot0

@@ -1,0 +1,14 @@
+class("HMSHunterPTPage", import(".TemplatePage.PtTemplatePage")).OnInit = function (slot0)
+	slot0.super.OnInit(slot0)
+
+	slot0.helpBtn = slot0:findTF("help", slot0.bg)
+
+	onButton(slot0, slot0.helpBtn, function ()
+		pg.MsgboxMgr.GetInstance():ShowMsgBox({
+			type = MSGBOX_TYPE_HELP,
+			helps = i18n("hunter_npc")
+		})
+	end, SFX_PANEL)
+end
+
+return class("HMSHunterPTPage", import(".TemplatePage.PtTemplatePage"))

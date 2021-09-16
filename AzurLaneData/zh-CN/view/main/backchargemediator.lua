@@ -1,0 +1,39 @@
+slot0 = class("BackChargeMediator", import("..base.ContextMediator"))
+slot0.CHARGE = "BackChargeMediator:CHARGE"
+
+slot0.register = function (slot0)
+	slot0.viewComponent:setPlayer(slot2)
+
+	if getProxy(ShopsProxy):getChargedList() then
+		slot0.viewComponent:setChargedList(slot4)
+	end
+
+	slot0:bind(slot0.CHARGE, function (slot0, slot1)
+		slot0:sendNotification(GAME.REFUND_CHHARGE, {
+			shopId = slot1
+		})
+	end)
+end
+
+slot0.listNotificationInterests = function (slot0)
+	return {
+		PlayerProxy.UPDATED,
+		GAME.CHARGE_SUCCESS,
+		GAME.REFUND_INFO_UPDATE
+	}
+end
+
+slot0.handleNotification = function (slot0, slot1)
+	slot3 = slot1:getBody()
+
+	if slot1:getName() == PlayerProxy.UPDATED then
+	elseif slot2 == ShopsProxy.CHARGED_LIST_UPDATED then
+	elseif slot2 == GAME.CHARGE_CONFIRM_FAILED then
+	elseif slot2 == GAME.CHARGE_SUCCESS then
+		slot0:sendNotification(GAME.GET_REFUND_INFO)
+	elseif slot2 == GAME.REFUND_INFO_UPDATE then
+		slot0.viewComponent:refundUpdate()
+	end
+end
+
+return slot0

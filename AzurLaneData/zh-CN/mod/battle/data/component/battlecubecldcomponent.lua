@@ -1,0 +1,48 @@
+ys = ys or {}
+slot1 = class("BattleCubeCldComponent", ys.Battle.BattleCldComponent)
+ys.Battle.BattleCubeCldComponent = slot1
+slot1.__name = "BattleCubeCldComponent"
+
+slot1.Ctor = function (slot0, slot1, slot2, slot3, slot4, slot5)
+	slot0.Battle.BattleCubeCldComponent.super.Ctor(slot0)
+
+	slot0._offsetX = slot4
+	slot0._offsetZ = slot5
+	slot0._offset = Vector3(slot4, 0, slot5)
+	slot0._boxSize = Vector3.zero
+	slot0._min = Vector3.zero
+	slot0._max = Vector3.zero
+
+	slot0:ResetSize(slot1, slot2, slot3)
+
+	slot0._box = pg.CldNode.New()
+end
+
+slot1.ResetSize = function (slot0, slot1, slot2, slot3)
+	slot0._boxSize.x = slot1 * 0.5
+	slot0._boxSize.y = slot2 * 0.5
+	slot0._boxSize.z = slot3 * 0.5
+	slot0._min.x = slot0._offsetX - slot1 * 0.5
+	slot0._min.y = -(slot2 * 0.5)
+	slot0._min.z = slot0._offsetZ - slot3 * 0.5
+	slot0._max.x = slot0._offsetX + slot1 * 0.5
+	slot0._max.y = slot2 * 0.5
+	slot0._max.z = slot0._offsetZ + slot3 * 0.5
+end
+
+slot1.GetCldBox = function (slot0, slot1)
+	if slot1 then
+		slot0._cldData.LeftBound = slot1.x - math.abs(slot0._min.x)
+		slot0._cldData.RightBound = slot1.x + math.abs(slot0._max.x)
+		slot0._cldData.LowerBound = slot1.z - math.abs(slot0._min.z)
+		slot0._cldData.UpperBound = slot1.z + math.abs(slot0._max.z)
+	end
+
+	return slot0._box:UpdateBox(slot0._min, slot0._max, slot1)
+end
+
+slot1.GetCldBoxSize = function (slot0)
+	return slot0._boxSize
+end
+
+return
